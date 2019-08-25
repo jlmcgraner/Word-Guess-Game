@@ -1,0 +1,82 @@
+body {
+
+    text-align: center;
+    background-color: lightblue;
+}
+
+
+#guessContainer
+{
+    float:center;
+    text-align: center;
+}
+
+#hangman-img-container
+{
+    height: 200px;
+    width: 200px;
+    border: 3px solid;
+    font-size: 80;
+    font-weight: bold;
+    text-align: center;
+}
+
+#hangman-img-container b
+{
+    display: none;
+}
+
+.guessingWordContainer label
+{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#img
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+.tryLetters
+{
+    background-color: lightblue;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.tryLetters a
+{
+    font-size: 20px;
+    padding: 2px;
+}
+
+.tryLetters ul
+{
+    list-style-type: square;
+}
+
+.tryLetters ul li
+{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.not-tried
+{
+    color: white;
+}
+
+.correct
+{
+    color: green;
+}
+
+.wrong
+{
+    color: darkred;
+    text-decoration: line-through;
+}

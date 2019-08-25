@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="game.js"></script>
+
+    <title>Two-Player Hangman!</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+    <h1>Two-Player Hangman!</h1>
+    <br>
+    <p>
+        <u>Instructions:</u>
+        <br><br>
+        <strong>Player 1:</strong> Type a word and hit "Start Game"
+        <br>
+        <strong>Player 2:</strong> You have 6 attempts. Please guess a letter
+    </p>
+    <div id="inputGuessWord">
+        <input type="password" id="guessWord" />
+        <button id="btnSubmit">Start game</button>
+    </div>
+    <div id="hangmanContainer">
+        <div id="hangman-img-container">
+            <b>&nbsp;O</b><br/>
+            <b>/&nbsp;</b>
+            <b>|&nbsp;</b>
+            <b>\</b><br/>
+            <b>/&nbsp;</b>
+            <b>\</b>
+        </div>
+        <div id="guessContainer">
+            <div class="guessingWordContainer"></div>
+            <label>Tap a letter</label>
+            <div class="tryLetters"></div>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
